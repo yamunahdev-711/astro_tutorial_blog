@@ -1,7 +1,6 @@
 ---
 const pageTitle = "Home Page";
-import Footer from '../components/Footer.astro';
-import Navigation from '../components/Navigation.astro';
+
 import BaseLayout from '../layouts/BaseLayout.astro';
 import '../styles/global.css';
 import Greeting from '../components/Greeting';
@@ -21,11 +20,10 @@ import Greeting from '../components/Greeting';
 			<Greeting client:load messages={["Hej", "Hallo", "Hola", "Habari"]} />
 		  </BaseLayout>
 		
-
-	
 		<script>
 			
 			import "../scripts/menu.js";
 		  </script>
 	</body>
 </html>
+
